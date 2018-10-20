@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Stylesheets -->
+    <link href="Detail.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Start</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">e-Mensa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Start.html">Start <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Produkte.html">Mahlzeiten</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Produkte.html">Bestellung</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" target="_blank" href="http://fh-aachen.de">FH-Aachen</a>
+                        </li>
+                    </ul>
+                    <form action="http://www.google.de/search" target="_blank" class="form-inline my-2 my-lg-0">
+                        <input type="text" value="www.fh-aachen.de" hidden="hidden" name="as_sitesearch">
+                        <input type="search" class="form-control mr-sm-2" placeholder="Search" name="q">
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                    <h2>Deteils fuer "Falaffel"</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <input class="form-control" placeholder="Benutzer">
+                        <input type="password" class="form-control" placeholder="Passwort">
+                        <button class="btn" type="submit">Anmelden</button>
+                    </fieldset>
+                    <p id="login-text">Melden Sie sich jetzt an, um die wirklich viel guenstigeren Preise fuer Mitarbeiter oder Studenten zu sehen.</p>
+                </div>
+                <div class="col-md-9">
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <img id="product-image" class="img-fluid" src="./Img/title.jpg" alt="Produkt Image">
+                            </div>
+                            <div class="col-md-3">
+                                <p id="price">Gast-Preis</p>
+                                <h2>5,95</h2>
+                                <button type="submit" class="btn">Vorbestellen</button>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="tab">
+                        <button class="tablinks" onclick="meel(event, 'Beschreibung')">Beschreibung</button>
+                        <button class="tablinks" onclick="meel(event, 'Zutaten')">Zutaten</button>
+                        <button class="tablinks" onclick="meel(event, 'Bewertungen')">Bewertungen</button>
+                    </div>
+
+                    <div id="Beschreibung" class="tabcontent">
+                        <p>Teigtasche mit Falafel aus Kichererbsen und Sesam, dazu passt herforragend der Krautsalat.</p>
+                    </div>
+
+                    <div id="Zutaten" class="tabcontent">
+                        <p></p>
+                    </div>
+
+                    <div id="Bewertungen" class="tabcontent">
+                        <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
+                            <input type="text" placeholder="Benutzer" name="benutzer">
+                            <p>Bewertung</p>
+                            <select class="form-control" name="bewertung" >
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+
+                            <textarea name="bemerkung" rows="3" placeholder="Bemerkung"></textarea>
+                            <button class="btn" type="submit">Abschicken</button>
+
+                            <input type="text" value="3062368" name="matrikel" hidden="hidden">
+                            <input type="text" value="rey" name="kontrolle" hidden="hidden">
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        (c) 2018 DBWT
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 center-text">
+                                    <a href="./Start.html">Login</a>
+                                </div>
+                                <div class="col-md-3 center-text">
+                                    <a href="./Start.html">Registrieren</a>
+                                </div>
+                                <div class="col-md-3 center-text">
+                                    <a href="./Start.html">Zutatenliste</a>
+                                </div>
+                                <div class="col-md-3 center-text fh-tuerkis">
+                                    <a href="./Impressum.html">Impressum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- JavaScript for bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function meel(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

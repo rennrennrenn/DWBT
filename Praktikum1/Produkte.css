@@ -1,0 +1,24 @@
+﻿/*something for Bootsstrap*/
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+#title-image {
+    width: 100%;
+}
+
+#small-image {
+    width: 100%;
+}
+
+div.center-text {
+    text-align: center;
+}
+
+a {
+    color: #00b5ad !important;
+}
+
+#product-pic {
+    width: 100%;
+}
