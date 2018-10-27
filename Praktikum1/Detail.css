@@ -3,12 +3,47 @@
     box-sizing: content-box;
 }
 
-#product-image {
-    width: 100%;
+/*Navbar*/
+
+div.center-text {
+    text-align: center;
 }
 
-#small-image {
+a {
+    color: #00b5ad !important;
+}
+
+hr {
     width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    color: black;
+    background: black;
+}
+
+
+.navbar-custom {
+    background-color: white;
+}
+
+#logo {
+    color: black !important;
+    font-size: 25px;
+}
+
+#search-form {
+    width: 15em;
+}
+
+.nav-border-right {
+    border-right: 1px solid black;
+}
+
+/*Site*/
+
+#product-image {
+    width: 100%;
+    padding-left: 0px;
 }
 
 div.center-text {
@@ -54,4 +89,35 @@ a {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+
+.checked {
+    color: orange;
+}
+
+#boder-bot {
+    margin-bottom: 10px;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+#bnt-vorbestellen{
+    width: 100%;
+}
+
+.magin-bot{
+    margin-bottom: 10px;
+}
+
+#login {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#login-lable{
+    text-align: center;
 }

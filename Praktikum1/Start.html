@@ -8,41 +8,51 @@
     <!-- Stylesheets -->
     <link href="Start.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <title>Start</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">e-Mensa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Start.html">Start <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Produkte.html">Mahlzeiten</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Produkte.html">Bestellung</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" target="_blank" href="http://fh-aachen.de">FH-Aachen</a>
-                        </li>
-                    </ul>
-
-                    <form action="http://www.google.de/search" target="_blank" class="form-inline my-2 my-lg-0">
-                        <input type="text" value="www.fh-aachen.de" hidden="hidden" name="as_sitesearch">
-                        <input type="search" class="form-control mr-sm-2" placeholder="Search" name="q">
-                        <button type="submit"class="btn btn-outline-success my-2 my-sm-0">Search</button>
-                    </form>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-costem">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a id="logo" class="navbar-brand" href="./Start.html">e-Mensa</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-border-right" href="./Start.html">Start <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-border-right" href="./Produkte.html">Mahlzeiten</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link nav-border-right" href="./Produkte.html">Bestellung</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" target="_blank" href="http://fh-aachen.de">FH-Aachen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <form id="search-form" action="http://www.google.de/search" target="_blank" class="form-inline my-2 my-lg-0">
+                                <button type="submit" class="btn btn-outline-dark btn-sm"><i class="fas fa-search"></i></button>
+                                <input type="text" value="www.fh-aachen.de" hidden="hidden" name="as_sitesearch">
+                                <input type="search" class="form-control-sm" placeholder="Search" name="q">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </nav>
+            <hr>
         </header>
 
         <img id="title-image" class="img-fluid" src="./Img/title.jpg" alt="Title Image">
@@ -53,7 +63,7 @@
                     <p>Der Dienst e-Mensa ist noch beta. Sie koennen bereits <a href="./Produkte.html">Mahlzeiten</a> durchstoebern, aber noch nicht bestellen.</p>
                     <p>Registrieren Sie sich <a href="#">hier</a>, um ueber die Veroeffentlichung des Dienstes per Mail informiert zu werden</p>
                 </div>
-                <div class="col-md-9">
+                <div id="main-content" class="col-md-9">
                     <section class="container">
                         <div class="row">
                             <div class="col-md-9">
@@ -61,8 +71,8 @@
                                 <p>... und gemeinsam mit Komilitonen und Freunden essen</p>
                             </div>
                             <div class="col-md-3">
-                                <button type="submit" class="btn">Registrieren</button>
-                                <button type="submit" class="btn">Anmelden</button>
+                                <button type="submit" class="btn btn-outline-dark register-btn"><i class="far fa-hand-point-right"></i> Registrieren</button>
+                                <button type="submit" class="btn btn-outline-dark register-btn"><i class="fas fa-sign-in-alt"></i> Anmelden</button>
                             </div>
                         </div>
                     </section>
@@ -72,6 +82,7 @@
         </main>
 
         <footer class="footer">
+            <hr />
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -80,13 +91,13 @@
                     <div class="col-md-8">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Login</a>
                                 </div>
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Registrieren</a>
                                 </div>
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Zutatenliste</a>
                                 </div>
                                 <div class="col-md-3 center-text fh-tuerkis">

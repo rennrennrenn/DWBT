@@ -7,38 +7,51 @@
     <!-- Stylesheets -->
     <link href="Detail.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Start</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <title>Detail</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">e-Mensa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Start.html">Start <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Produkte.html">Mahlzeiten</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./Produkte.html">Bestellung</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" target="_blank" href="http://fh-aachen.de">FH-Aachen</a>
-                        </li>
-                    </ul>
-                    <form action="http://www.google.de/search" target="_blank" class="form-inline my-2 my-lg-0">
-                        <input type="text" value="www.fh-aachen.de" hidden="hidden" name="as_sitesearch">
-                        <input type="search" class="form-control mr-sm-2" placeholder="Search" name="q">
-                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
-                    </form>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-costem">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a id="logo" class="navbar-brand" href="./Start.html">e-Mensa</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-border-right nav-link" href="./Start.html">Start <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-border-right nav-link" href="./Produkte.html">Mahlzeiten</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-border-right nav-link" href="./Produkte.html">Bestellung</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" target="_blank" href="http://fh-aachen.de">FH-Aachen</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <form id="search-form" action="http://www.google.de/search" target="_blank" class="form-inline my-2 my-lg-0">
+                                <button type="submit" class="btn btn-outline-dark btn-sm"><i class="fas fa-search"></i></button>
+                                <input type="text" value="www.fh-aachen.de" hidden="hidden" name="as_sitesearch">
+                                <input type="search" class="form-control-sm" placeholder="Search" name="q">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </nav>
+            <hr>
         </header>
         <main class="container">
             <div class="row">
@@ -49,11 +62,11 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <fieldset>
-                        <legend>Login</legend>
-                        <input class="form-control" placeholder="Benutzer">
-                        <input type="password" class="form-control" placeholder="Passwort">
-                        <button class="btn" type="submit">Anmelden</button>
+                    <fieldset id="login">
+                        <legend id="login-lable">Login</legend>
+                        <input class="form-control magin-bot" placeholder="Benutzer">
+                        <input type="password" class="form-control magin-bot" placeholder="Passwort">
+                        <button class="btn btn-outline-dark magin-bot" type="submit">Anmelden</button>
                     </fieldset>
                     <p id="login-text">Melden Sie sich jetzt an, um die wirklich viel guenstigeren Preise fuer Mitarbeiter oder Studenten zu sehen.</p>
                 </div>
@@ -63,10 +76,10 @@
                             <div class="col-md-9">
                                 <img id="product-image" class="img-fluid" src="./Img/title.jpg" alt="Produkt Image">
                             </div>
-                            <div class="col-md-3">
-                                <p id="price">Gast-Preis</p>
-                                <h2>5,95</h2>
-                                <button type="submit" class="btn">Vorbestellen</button>
+                            <div id="boder-bot" class="col-md-3">
+                                <p id="price" class="text-align-right">Gast-Preis</p>
+                                <h2 class="text-align-right">5,95</h2>
+                                <button id="bnt-vorbestellen" type="submit" class="btn btn-outline-dark">Vorbestellen</button>
                             </div>
                         </div>
                     </section>
@@ -90,7 +103,7 @@
                         <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
                             <input type="text" placeholder="Benutzer" name="benutzer">
                             <p>Bewertung</p>
-                            <select class="form-control" name="bewertung" >
+                            <select class="form-control" name="bewertung">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -99,7 +112,7 @@
                             </select>
 
                             <textarea name="bemerkung" rows="3" placeholder="Bemerkung"></textarea>
-                            <button class="btn" type="submit">Abschicken</button>
+                            <button class="btn btn-outline-dark" type="submit">Abschicken</button>
 
                             <input type="text" value="3062368" name="matrikel" hidden="hidden">
                             <input type="text" value="rey" name="kontrolle" hidden="hidden">
@@ -111,21 +124,22 @@
             </div>
         </main>
         <footer class="footer">
+            <hr />
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
                         (c) 2018 DBWT
                     </div>
                     <div class="col-md-8">
-                        <div class="container">
+                        <div class="container" >
                             <div class="row">
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Login</a>
                                 </div>
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Registrieren</a>
                                 </div>
-                                <div class="col-md-3 center-text">
+                                <div class="nav-border-right col-md-3 center-text">
                                     <a href="./Start.html">Zutatenliste</a>
                                 </div>
                                 <div class="col-md-3 center-text fh-tuerkis">

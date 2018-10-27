@@ -3,13 +3,7 @@
     box-sizing: content-box;
 }
 
-#title-image {
-    width: 100%;
-}
-
-#small-image {
-    width: 100%;
-}
+/*Navbar*/
 
 div.center-text {
     text-align: center;
@@ -17,4 +11,50 @@ div.center-text {
 
 a {
     color: #00b5ad !important;
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    margin: 0 auto;
+    color: black;
+    background: black;
+}
+
+
+.navbar-custom {
+    background-color: white;
+}
+
+#logo {
+    color: black !important;
+    font-size: 25px;
+}
+
+#search-form {
+    width: 15em;
+}
+
+.nav-border-right{
+    border-right: 1px solid black;
+}
+
+
+/*Site*/
+.register-btn {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#title-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#small-image {
+    width: 100%;
+}
+
+#main-content{
+    padding-right: 0px;
 }
